@@ -15,7 +15,7 @@ from flask_jwt_extended import create_access_token, create_refresh_token
 # print(dotenv_path)
 # https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1
 # dotenv_path = Path('../.env-remote')
-load_dotenv('../.env-remote') # can use the var dotenv_path, # take environment variables from .env.
+load_dotenv('../.env-local') # can use the var dotenv_path, # take environment variables from .env.
 url = os.getenv("SQLALCHEMY_DATABASE_URI")
 print('url:', url)
 connection = psycopg2.connect(url)
